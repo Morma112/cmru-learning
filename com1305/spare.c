@@ -43,7 +43,7 @@ void addData() //เพิ่มข้อมูล
     scanf("%s", db[count].id);
     fflush(stdin);
     printf("Enter name: ");
-    scanf(" %[^\n]", db[count].name);
+    scanf(" %s", db[count].name);
     fflush(stdin);
     printf("Enter type: ");
     scanf("%s", db[count].type);
@@ -91,7 +91,7 @@ void editData() //แก้ไขข้อมูล
     for(int i=0;i<count;i++) {
         if(strcmp(db[i].id, key) == 0) {
             printf("Enter new name: ");
-            scanf(" %[^\n]", db[i].name);
+            scanf(" %s", db[i].name);
             fflush(stdin);
             printf("Enter new type: ");
             scanf("%s", db[i].type);
